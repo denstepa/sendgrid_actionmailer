@@ -1,7 +1,4 @@
-class SendgridMailer
-  def self.hi
-    puts "Hello world!"
-  end
+module SendgridMailer
 end
 
 require 'sendgrid_mailer/version'
@@ -13,3 +10,5 @@ require 'tmpdir'
 require 'sendgrid-ruby'
 
 require 'sendgrid_mailer/delivery_method'
+
+

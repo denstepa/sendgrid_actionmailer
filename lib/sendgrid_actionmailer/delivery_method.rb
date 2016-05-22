@@ -1,4 +1,4 @@
-module SendgridMailer
+module SendgridActionMailer
   class DeliveryMethod
     attr_accessor :client
 

@@ -6,7 +6,7 @@ require 'tmpdir'
 
 require 'sendgrid-ruby'
 
-require 'sendgrid_mailer/delivery_method'
+require 'sendgrid_actionmailer/delivery_method'
 
 
 module SendgridActionMailer

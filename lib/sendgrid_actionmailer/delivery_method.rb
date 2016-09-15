@@ -62,6 +62,12 @@ module SendgridActionMailer
           m.html = mail.body.raw_source
         end
 
+        if mail[:tracking]
+          tracking = JSON.parse mail[:tracking].value
+          m.smtpapi.add_filter('clicktrack', 'enable', tracking['click'] ? 1 : 0) unless tracking['click'].nil?
+          m.smtpapi.add_filter('opentrack', 'enable', tracking['open'] ? 1 : 0) unless tracking['open'].nil?
+        end
+
         m.smtpapi.add_category mail[:category].value
 
         substitutions.each do |key, value|

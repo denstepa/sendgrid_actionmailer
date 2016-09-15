@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sendgrid_mailer (0.1.0)
+    sendgrid_actionmailer (0.2.0)
       mail (~> 2.5)
       sendgrid-ruby (~> 1.1.6)
 
@@ -13,10 +13,10 @@ GEM
       multipart-post (>= 1.2, < 3)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mime-types (3.0)
+    mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.1)
+    mimemagic (0.3.2)
     multipart-post (2.0.0)
     rake (10.5.0)
     rspec (3.2.0)
@@ -45,7 +45,7 @@ DEPENDENCIES
   bundler (~> 1.11)
   rake (~> 10.0)
   rspec (~> 3.0)
-  sendgrid_mailer!
+  sendgrid_actionmailer!
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
